@@ -1,0 +1,193 @@
+/* SOME UNIVERSAL STYLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+}
+
+:root {
+  --main-gray: linear-gradient(75deg, rgb(75, 75, 75) 5%, rgb(33, 32, 32));
+}
+/* NAVIGATION SECTION */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(185, 33, 33, 70%);
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+  font-size: calc(1.2rem + 2px);
+}
+
+#navbar a {
+  color: antiquewhite;
+}
+
+/* WELCOME SECTION */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--main-gray);
+}
+
+.intro {
+  color: antiquewhite;
+}
+
+.intro h1,
+.intro p {
+  margin: 0;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* PROJECTS SECTION */
+#projects {
+  background-color: rgb(55, 82, 106);
+  color: antiquewhite;
+  width: 100%;
+  padding: 40px;
+}
+
+#projects h2 {
+  margin: 0 0 20px 0;
+  padding: 80px 0 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(55, 82, 106);
+  gap: 1rem;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgba(42, 53, 52, 0.648);
+  border-radius: 3px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-title {
+  margin: 0;
+  padding: 10px;
+  background-color: cadetblue;
+  text-align: center;
+}
+
+/* PROFILE SECTION */
+.profilelink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background: var(--main-gray);
+}
+
+#profilelink h2 {
+  margin-top: 0;
+}
+
+.profile.top {
+  text-align: center;
+  color: antiquewhite;
+}
+
+.profile.top h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.profile.top p {
+  font-size: 1.5rem;
+  margin: 0;
+  font-style: italic;
+}
+
+#profile {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  border-top: 3px solid rgb(185, 33, 33);
+  background: var(--main-gray);
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  color: antiquewhite;
+  font-size: 18px;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+  #navbar ul {
+    font-size: 1rem;
+    gap: 20px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

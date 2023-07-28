@@ -7,41 +7,91 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav id="nav-bar">
+    <nav id="navbar">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#profile">Contact</a></li>
       </ul>
     </nav>
-    <div id="welcome-section">
-      <h1>Hi, I'm (name).</h1>
-      <p>(your profession)</p>
-    </div>
-    <div id="projects">
-      <h2>Your Projects</h2>
-      <div class="project-container"></div>
-
-      <div class="project-container"></div>
-
-      <div class="project-container"></div>
-    </div>
-    <div id="profile-link">
-      <div class="profile top">
-        <h2>Some inspiring line</h2>
-        <p>Some description</p>
+    <main>
+      <div id="welcome-section">
+        <div class="intro">
+          <h1>Hi, I am (name)</h1>
+          <p>(your profession)</p>
+        </div>
       </div>
-      <div class="profile bottom">
-        <a href="https://www.facebook.com">Facebook</a>
-        <a href="https://www.github.com">Github</a>
-        <a href="https://www.twitter.com">Twitter</a>
+
+      <div id="projects">
+        <h2>Your Projects</h2>
+        <div class="container">
+          <div class="project-tile">
+            <a
+              href="https://github.com/jeru7/landingpage"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                src="landing.png"
+                alt="a photo of my assignment in theodinproject"
+              />
+              <p class="project-title">Landing Page</p>
+            </a>
+          </div>
+
+          <div class="project-tile">
+            <a
+              href="https://jeru7.github.io/docpage/"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                src="doc.png"
+                alt="a photo of my assignment in freecodecamp"
+              />
+
+              <p class="project-title">Documentation Page</p>
+            </a>
+          </div>
+
+          <div class="project-tile">
+            <a
+              href="https://jeru7.github.io/tributepage/"
+              target="_blank"
+              rel="noreferrer"
+              ><img
+                src="tribute.png"
+                alt="a photo of my assignment in freecodecamp"
+              />
+              <p class="project-title">Tribute Page</p>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <footer>
-      <p>Some contact information</p>
-      <p>
-        <a href="https://www.freecodecamp.org/">© created for freeCodeCamp</a>
-      </p>
-    </footer>
+
+      <div class="profilelink">
+        <div class="profile top">
+          <h2>Some inspiring line</h2>
+          <p>Some description</p>
+        </div>
+        <div class="profile bottom" id="profile">
+          <a id="profile-link" target="_blank" href="//www.facebook.com"
+            >Facebook</a
+          >
+          <a id="profile-link" target="_blank" href="https://www.github.com"
+            >Github</a
+          >
+          <a id="profile-link" target="_blank" href="https://www.twitter.com">
+            Twitter</a
+          >
+        </div>
+      </div>
+
+      <footer>
+        <p>Some contact information</p>
+
+        <p>
+          <a href="https://www.freecodecamp.org/">© created for freeCodeCamp</a>
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
