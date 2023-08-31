@@ -10,8 +10,6 @@ This is the live version of the portfolio webpage: [Visit site](https://jeru7.gi
 
 ## Preview
 
-![Screenshot](ppw.png "Sample photo of the site")
-
 ## Plans
 
 I'm continuously working on improving this assignment along with my progress of becoming a full-stack developer.
