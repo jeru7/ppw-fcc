@@ -6,7 +6,7 @@ This is my submission for personal portfolio webpage assignment of freecodecamp.
 
 ## Live site
 
-This is the live version of the portfolio webpage: [Visit site](https://jeru7.github.io/ppw/)
+This is the live version of the portfolio webpage: [Visit site](https://jeru7.github.io/ppw-fcc/)
 
 ## Preview
 
